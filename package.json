@@ -1,0 +1,28 @@
+{
+  "name": "vue3-easy-start",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "docker_build": "sudo docker build -t vue3-easy-start .",
+    "docker_run": "sudo docker run -d -p 80:80 --name=vue3-easy-start vue3-easy-start"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "pinia": "^2.0.12",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.14"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "@vitejs/plugin-vue": "^2.2.0",
+    "less": "^4.1.2",
+    "less-loader": "^10.2.0",
+    "typescript": "^4.5.4",
+    "unplugin-vue-components": "^0.18.5",
+    "vite": "^2.8.0",
+    "vue-tsc": "^0.29.8"
+  }
+}
