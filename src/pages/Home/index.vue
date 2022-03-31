@@ -33,6 +33,7 @@
   )
 
   onMounted(() => {
+    // @ts-ignore
     const { proxy } = getCurrentInstance()
     proxy.$api.testAPI.getNoData()
   })

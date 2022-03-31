@@ -8,7 +8,7 @@ export const testAPI = {
   getNoData () {
     return http.get(API1 + '/xxx')
   },
-  post (params: any) {
+  post (params) {
     return http.post(API2 + '/xxx', params)
   },
 }
