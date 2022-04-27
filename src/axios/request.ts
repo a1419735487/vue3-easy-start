@@ -76,7 +76,7 @@ instance.interceptors.response.use(response => {
     error.message = '服务器响应超时'
     message.error(error.message)
   }
-  return Promise.resolve(error.response)
+  return Promise.reject(error.response)
 })
 
 export default instance;
